@@ -10,6 +10,7 @@ const Scanner: React.FunctionComponent<ScannerProps> = () => {
                 <title>QR Scanner ~ Cloud Menu</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
+            <h2>scanner</h2>
         </div>
     );
 }
