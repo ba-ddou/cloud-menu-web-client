@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import client from '../../apollo-client'
+import client from '../../apollo-server-client'
 import { gql } from "apollo-boost";
 import { Business } from 'cloud-menu-shared-libs'
 
