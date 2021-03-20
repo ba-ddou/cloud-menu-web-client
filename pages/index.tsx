@@ -11,7 +11,7 @@ const Home: React.FunctionComponent<HomeProps> = () => {
         <title>Cloud Menu</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ScanBar scanPath="/scanner" />
+      <ScanBar scanPath="/scan" />
     </div>
   );
 }
