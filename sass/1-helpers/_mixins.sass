@@ -1,0 +1,40 @@
+@mixin transform($property) 
+    -webkit-transform: $property
+    -ms-transform: $property
+    transform: $property
+
+@mixin colop($opacity)
+    color: rgba(20, 20, 20, $opacity)
+
+@mixin font-settings ($prop1, $prop2)
+    font:
+        family: $prop1
+        size: $prop2
+
+@mixin for-small-phone
+    @media (max-width: 400px) 
+        @content
+
+@mixin for-tablet-portrait-up 
+    @media (min-width: 700px) 
+        @content
+
+@mixin for-big-desktop-up 
+    @media (min-width: 1200px) 
+        @content
+
+@mixin for-desktop-up 
+    @media (min-width: 950px) 
+        @content
+
+@mixin for-huge-desktop-up 
+    @media (min-width: 1400px) 
+        @content
+
+@mixin for-tablet-height
+    @media (min-width: 450px) and (min-height: 150px)
+        @content
+
+@mixin for-tablet-height-up
+    @media (min-width: 450px) and (min-height: 500px)
+        @content

@@ -1,0 +1,19 @@
+body
+    margin: 1.5rem 3rem
+    @include for-tablet-portrait-up 
+        margin: 1.8rem 6rem
+
+#root
+    display: flex
+    flex-direction: column
+    min-height: -moz-fill-available
+    min-height: -webkit-fill-available
+    min-height: stretch
+    .mainContent-page
+        flex: 1
+        @include for-big-desktop-up 
+            display: flex
+            flex-direction: column
+            justify-content: center
+    .footer
+        flex: 0
