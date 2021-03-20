@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
 import { useBusiness } from 'cloud-menu-shared-libs';
 import dynamic from 'next/dynamic'
 
@@ -14,7 +13,7 @@ export default function Demo() {
         data && setId(data);
     };
     return (
-        <div className={styles.container}>
+        <div >
             <Head>
                 <title>Cloud Menu</title>
                 <link rel="icon" href="/favicon.ico" />
