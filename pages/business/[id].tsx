@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import client from '../../apollo-server-client'
+import { absoluteURLApolloClient } from 'cloud-menu-shared-libs'
 import { gql } from "apollo-boost";
 import { Business } from 'cloud-menu-shared-libs'
 
@@ -21,7 +21,7 @@ export default BusinessPage;
 
 export async function getServerSideProps(context) {
 
-    const { data } = await client.query({
+    const { data } = await absoluteURLApolloClient.query({
         query: gql`
         query($id: String!) {
 		business(id: $id) {

@@ -1,12 +1,12 @@
 import '../styles/globals.css';
 import { ApolloProvider } from "@apollo/react-hooks";
-import client from '../apollo-client';
+import { apolloClient } from 'cloud-menu-shared-libs'
 
 
 function MyApp({ Component, pageProps }) {
   return (
     //@ts-ignore
-    <ApolloProvider client={client}>
+    <ApolloProvider client={apolloClient}>
       <Component {...pageProps} />
     </ApolloProvider>
   );

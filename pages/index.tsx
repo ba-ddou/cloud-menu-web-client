@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import { useBusiness } from '../hooks/useBusiness';
+import { useBusiness } from 'cloud-menu-shared-libs';
 import dynamic from 'next/dynamic'
 
 const QrReader = dynamic(() => import('react-qr-reader'), { ssr: false })
