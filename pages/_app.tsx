@@ -1,4 +1,4 @@
-import '../sass/index.sass';
+import '@sass/index.sass';
 import { ApolloProvider } from "@apollo/react-hooks";
 import { apolloClient } from 'cloud-menu-shared-libs'
 

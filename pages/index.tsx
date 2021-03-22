@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { ScanBar } from '../components/molecules'
+import { ScanBar } from '@components/molecules'
 export interface HomeProps {
 
 }
