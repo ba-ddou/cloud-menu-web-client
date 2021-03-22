@@ -24,10 +24,13 @@ export const Scanner: React.FunctionComponent<ScannerProps> = ({
         if (!data) return;
         let { businessId } = parseQrCode(data);
         if (businessId) {
-            setScanState('success');
             stopScanner();
+            setScanState('success');
             onScan({ businessId });
-        }
+        } else{
+            stopScanner();
+            setScanState('error');
+        } 
     }
 
     let onTryAgainHandler = () => {
