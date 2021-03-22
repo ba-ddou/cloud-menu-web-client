@@ -1,17 +1,22 @@
 import { useRouter } from 'next/router'
-import { absoluteURLApolloClient } from 'cloud-menu-shared-libs'
+import { Business, absoluteURLApolloClient } from 'cloud-menu-shared-libs'
 import { gql } from "apollo-boost";
-import { Business } from 'cloud-menu-shared-libs'
+import { BusinessCard } from '@components/molecules'
 
 export interface BusinessPageProps {
     business: Business
 }
 
 const BusinessPage: React.SFC<BusinessPageProps> = ({ business }) => {
-
+    let { name, description, banner } = business;
     return (
         <div>
-            <h1>{business.name}</h1>
+            <BusinessCard
+                data={{
+                    name, description, banner
+                }}
+                onMoreInfo={() => { }}
+            />
         </div>
     );
 }
@@ -25,7 +30,17 @@ export async function getServerSideProps(context) {
         query: gql`
         query($id: String!) {
 		business(id: $id) {
-			name
+			_id
+            name
+            _type
+            description
+            banner{
+                uri
+            }
+            email
+            phone
+            city
+            address
 		}
 		
 	}
