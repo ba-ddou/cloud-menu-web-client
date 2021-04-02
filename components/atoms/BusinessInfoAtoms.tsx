@@ -24,7 +24,7 @@ export interface BusinessBannerProps {
 
 export const BusinessBanner: React.SFC<BusinessBannerProps> = ({ uri }) => {
     return (
-        <img src={uri} />
+        <img src={uri} style={{width: '100%'}} />
     );
 }
 
