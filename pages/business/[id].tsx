@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import { Business, absoluteURLApolloClient } from 'cloud-menu-shared-libs'
 import { gql } from "apollo-boost";
 import { BusinessCard } from '@components/molecules'
-
+import { Menu } from '@components/organisms'
 export interface BusinessPageProps {
     business: Business
 }
@@ -17,6 +17,7 @@ const BusinessPage: React.SFC<BusinessPageProps> = ({ business }) => {
                 }}
                 onMoreInfo={() => { }}
             />
+            <Menu menu={business.menu} />
         </div>
     );
 }
@@ -41,6 +42,10 @@ export async function getServerSideProps(context) {
             phone
             city
             address
+            menu {
+                id
+                name
+            }
 		}
 		
 	}
