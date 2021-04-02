@@ -45,6 +45,14 @@ export async function getServerSideProps(context) {
             menu {
                 id
                 name
+                items{
+                    name
+                    description
+                    thumbnail{
+                        uri
+                    }
+                    price
+                }
             }
 		}
 		

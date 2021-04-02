@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { SectionsTabBar } from '@components/molecules'
+import { SectionsTabBar, MenuItem } from '@components/molecules'
 import { MenuSection } from 'cloud-menu-shared-libs'
 export interface MenuProps {
     menu: MenuSection[]
@@ -21,6 +21,11 @@ export const Menu: React.SFC<MenuProps> = ({ menu }) => {
                 onSectionChange={onSectionChangeHandler}
                 selectedSectionId={selectedSectionId}
             />
+            {
+                menu.map(({ items }) => {
+                    return items.map(item => <MenuItem menuItem={item} />)
+                })
+            }
         </div>
     );
 }
