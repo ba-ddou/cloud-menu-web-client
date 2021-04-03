@@ -602,7 +602,7 @@ classnames@2.2.6:
 
 "cloud-menu-shared-libs@https://github.com/ba-ddou/cloud-menu-shared-libs":
   version "1.0.0"
-  resolved "https://github.com/ba-ddou/cloud-menu-shared-libs#e745dac8edd208b3fc99315221a1a17677f6a686"
+  resolved "https://github.com/ba-ddou/cloud-menu-shared-libs#cb71b3163384dbeefb9d3fe71fbf3dab54eb4316"
   dependencies:
     "@apollo/client" "^3.3.12"
     "@apollo/react-hooks" "^4.0.0"
