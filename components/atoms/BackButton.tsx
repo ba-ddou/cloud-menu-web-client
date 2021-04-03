@@ -1,4 +1,4 @@
-
+import styles from './BackButton.module.sass'
 
 export interface BackButtonProps {
     onClick: () => void
@@ -6,6 +6,6 @@ export interface BackButtonProps {
 
 export const BackButton: React.SFC<BackButtonProps> = ({ onClick }) => {
     return ( 
-        <button></button>
+        <button className={styles.deywfgy}></button>
      );
 }

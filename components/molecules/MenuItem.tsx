@@ -5,6 +5,8 @@ export interface MenuItemProps {
     menuItem: MenuItemT
 }
 
+
+//TODO: do something later
 export const MenuItem: React.SFC<MenuItemProps> = ({ menuItem }) => {
     return (
         <div className={styles.menuItem}>
