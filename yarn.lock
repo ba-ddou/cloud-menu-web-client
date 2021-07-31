@@ -65,6 +65,20 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@cloudmenu/cloud-menu-shared-libs@^0.0.1":
+  version "0.0.1"
+  resolved "https://gitlab.com/api/v4/projects/28521280/packages/npm/@cloudmenu/cloud-menu-shared-libs/-/@cloudmenu/cloud-menu-shared-libs-0.0.1.tgz#7d0b12cae2ec28e049eec6126f70427f4bad0ece"
+  integrity sha1-fQsSyuLsKOBJ7sYSb3BCf0utDs4=
+  dependencies:
+    "@apollo/client" "^3.3.12"
+    "@apollo/react-hooks" "^4.0.0"
+    apollo-boost "^0.4.9"
+    graphql "^15.5.0"
+    react "^17.0.1"
+    rollup "2.42.1"
+    rollup-plugin-jsx "^1.0.3"
+    typescript "^4.2.3"
+
 "@graphql-typed-document-node/core@^3.0.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@graphql-typed-document-node/core/-/core-3.1.0.tgz#0eee6373e11418bfe0b5638f654df7a4ca6a3950"
@@ -599,19 +613,6 @@ classnames@2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
-
-"cloud-menu-shared-libs@https://github.com/ba-ddou/cloud-menu-shared-libs":
-  version "1.0.0"
-  resolved "https://github.com/ba-ddou/cloud-menu-shared-libs#cb71b3163384dbeefb9d3fe71fbf3dab54eb4316"
-  dependencies:
-    "@apollo/client" "^3.3.12"
-    "@apollo/react-hooks" "^4.0.0"
-    apollo-boost "^0.4.9"
-    graphql "^15.5.0"
-    react "^17.0.1"
-    rollup "2.42.1"
-    rollup-plugin-jsx "^1.0.3"
-    typescript "^4.2.3"
 
 color-convert@^1.9.0:
   version "1.9.3"

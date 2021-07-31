@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { SectionsTabBar, MenuItem } from '@components/molecules'
-import { MenuSection } from 'cloud-menu-shared-libs'
+import { MenuSection } from '@cloudmenu/cloud-menu-shared-libs'
 export interface MenuProps {
     menu: MenuSection[]
 }

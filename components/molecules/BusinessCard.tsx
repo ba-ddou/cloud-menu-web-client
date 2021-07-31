@@ -1,5 +1,5 @@
 import { BusinessHeader, BusinessBanner, BusinessInfoIcon } from '../atoms'
-import { Business } from 'cloud-menu-shared-libs'
+import { Business } from '@cloudmenu/cloud-menu-shared-libs'
 
 export interface BusinessCardProps {
     data: Pick<Business, 'banner' | 'name' | 'description'>

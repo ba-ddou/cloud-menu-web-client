@@ -5,7 +5,7 @@ module.exports = {
         return [
             {
                 source: '/graphql',
-                destination: 'https://cloud-menu-api-ij4ie6dxaa-ue.a.run.app/'
+                destination: 'https://cloud-menu-api-ij4ie6dxaa-nw.a.run.app'
                 // destination: 'http://localhost:4000/',
             },
         ];

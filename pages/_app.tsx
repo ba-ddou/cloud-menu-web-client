@@ -1,6 +1,6 @@
 import '@sass/index.sass';
 import { ApolloProvider } from "@apollo/react-hooks";
-import { apolloClient } from 'cloud-menu-shared-libs'
+import { apolloClient } from '@cloudmenu/cloud-menu-shared-libs'
 
 
 function MyApp({ Component, pageProps }) {

@@ -1,5 +1,5 @@
 import { MenuItemThumbnail, MenuItemNameAndDescriptions, MenuItemPrice } from '@components/atoms'
-import { MenuItem as MenuItemT } from 'cloud-menu-shared-libs'
+import { MenuItem as MenuItemT } from '@cloudmenu/cloud-menu-shared-libs'
 import styles from './MenuItem.module.sass'
 export interface MenuItemProps {
     menuItem: MenuItemT
