@@ -1,4 +1,5 @@
 import styles from './scanButton.module.sass'
+// import qrSvg from '../../assets/icons/qrScanner.svg'
 export interface ScanButtonProps {
     
 }
@@ -6,7 +7,7 @@ export interface ScanButtonProps {
 export const ScanButton: React.FunctionComponent<ScanButtonProps> = () => {
     return (
         <div className={styles.scanButton}>
-            scan
+            {/* <img src={qrSvg} /> */}
         </div>
     );
 }
