@@ -1,7 +1,6 @@
 import styles from './scanButton.module.sass'
 // import qrSvg from '../../assets/icons/qrScanner.svg'
 import ScannerSVG from './ScannerSVG'
-import hbn from '../../'
 export interface ScanButtonProps {
     
 }
