@@ -22,6 +22,7 @@ export const SectionsTabBar: React.SFC<SectionsTabBarProps> = ({
             {
                 sections.map(
                     section => <SectionTabBlock
+                        key={section.id}
                         title={section.name}
                         active={selectedSectionId == section.id ? true : false}
                         onClick={() => onSectionChange(section.id)}

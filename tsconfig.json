@@ -18,7 +18,8 @@
 			"@components/*": ["./components/*"],
 			"@helpers/*": ["./helpers/*"],
 			"@sass/*": ["./sass/*"],
-			"@icons/*": ["./assets/icons/*"]
+			"@icons/*": ["./assets/icons/*"],
+			"@root/*":["./*"]
 		}
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

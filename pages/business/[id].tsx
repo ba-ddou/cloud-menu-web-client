@@ -1,8 +1,9 @@
 import { useRouter } from 'next/router'
-import { Business, absoluteURLApolloClient } from '@cloudmenu/cloud-menu-shared-libs'
+import { Business } from '@cloudmenu/cloud-menu-shared-libs'
 import { gql } from "apollo-boost";
 import { BusinessCard } from '@components/molecules'
 import { Menu } from '@components/organisms'
+import { absoluteURLApolloClient } from '@root/apollo/client'
 export interface BusinessPageProps {
     business: Business
 }

@@ -23,7 +23,7 @@ export const Menu: React.SFC<MenuProps> = ({ menu }) => {
             />
             {
                 menu.map(({ items }) => {
-                    return items.map(item => <MenuItem menuItem={item} />)
+                    return items.map(item => <MenuItem key={item._id} menuItem={item} />)
                 })
             }
         </div>
