@@ -24,6 +24,7 @@ docker-build:
     - echo COMMIT_HASH="$CI_COMMIT_SHA" >> .env
     - echo PIPELINE_ID="$CI_PIPELINE_ID" >> .env
     - echo DEPLOYMENT_DATE=$(date) >> .env
+    - echo DEPLOYED_COMMIT_AUTHOR="$CI_COMMIT_AUTHOR" >> .env
 
 
     - echo $GCP_SERVICE_KEY > gcloud-service-key.json
