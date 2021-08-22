@@ -6,6 +6,6 @@ export interface BackButtonProps {
 
 export const BackButton: React.SFC<BackButtonProps> = ({ onClick }) => {
     return ( 
-        <button className={styles.deywfgy}></button>
+        <button></button>
      );
 }

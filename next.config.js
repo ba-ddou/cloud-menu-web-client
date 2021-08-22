@@ -12,6 +12,6 @@ module.exports = {
     },
     sassOptions: {
         includePaths: [path.join(__dirname, 'sass')],
-        prependData: `@import "${path.join(__dirname, './sass')}/1-helpers/_1-helpers.sass"`
+        prependData: `@import "${path.join(__dirname, './sass').split('\\').join('/')}/1-helpers/_1-helpers.sass"`
     },
 };
