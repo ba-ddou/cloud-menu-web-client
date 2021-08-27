@@ -10,6 +10,7 @@ export const Menu: React.SFC<MenuProps> = ({ menu }) => {
 
     let onSectionChangeHandler = (id: string) => {
         setSelectedSectionId(id);
+        document.getElementById(id).scrollIntoView();
     }
     return (
         <div>
@@ -22,8 +23,13 @@ export const Menu: React.SFC<MenuProps> = ({ menu }) => {
                 selectedSectionId={selectedSectionId}
             />
             {
-                menu.map(({ items }) => {
-                    return items.map(item => <MenuItem key={item._id} menuItem={item} />)
+                menu.map(({ id, name, items }) => {
+                    return (
+                        <>
+                            <h2 id={id}>{name}</h2>
+                            {items.map(item => <MenuItem key={item._id} menuItem={item} />)}
+                        </>
+                    )
                 })
             }
         </div>
