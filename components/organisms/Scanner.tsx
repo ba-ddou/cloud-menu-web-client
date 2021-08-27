@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic'
 import { InstructionsBox, FinePrintCTA } from '@components/atoms'
 import { ScannerDefault, ScannerSuccess, ScannerError } from '../molecules'
 import { parseQrCode } from '@helpers/qrCode'
+import styles from './Scanner.module.sass'
 
 const QrScanner = dynamic(() => import('react-qr-reader'), { ssr: false })
 
@@ -66,7 +67,8 @@ export const Scanner: React.FunctionComponent<ScannerProps> = ({
             {scanState == 'scan' &&
                 <>
                     <InstructionsBox text="Align the QR code within the frame to scan" />
-                    <QrScanner
+                    <div id={styles.scanner}>
+                        <QrScanner
                         delay={100}
                         style={{
                             height: 240,
@@ -75,6 +77,7 @@ export const Scanner: React.FunctionComponent<ScannerProps> = ({
                         onError={onErrorHandler}
                         onScan={onScanHandler}
                     />
+                    </div>
                     <FinePrintCTA text="Cancel Scanning" onClick={onCancelScan} />
                 </>
             }
