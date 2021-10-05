@@ -10,7 +10,7 @@
   "dependencies": {
     "@apollo/client": "^3.3.12",
     "@apollo/react-hooks": "^4.0.0",
-    "@cloudmenu/cloud-menu-shared-libs": "^0.0.1",
+    "@cloudmenu/cloud-menu-shared-libs": "0.0.4",
     "apollo-boost": "^0.4.9",
     "dotenv": "^10.0.0",
     "graphql": "^15.5.0",
