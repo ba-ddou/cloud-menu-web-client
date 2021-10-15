@@ -14,7 +14,7 @@ const Scan: React.FunctionComponent<ScanProps> = () => {
     const [showBusinessSkeleton, setShowBusinessSkeleton] = useState(false);
     const router = useRouter()
 
-    let onScan = ({ businessId }) => router.push(`/business/${businessId}`);
+    let onScan = ({ businessId,metaString }) => router.push(`/business/${businessId}?meta=${metaString}`);
 
     let onCancelScan = () => router.push(`/`)
 

@@ -10,7 +10,13 @@ const QrScanner = dynamic(() => import("react-qr-reader"), { ssr: false });
 const PRIVATE_KEY = "secret";
 
 export interface ScannerProps {
-	onScan: ({ businessId }: { businessId: string }) => void;
+	onScan: ({
+		businessId,
+		metaString,
+	}: {
+		businessId: string;
+		metaString: string;
+	}) => void;
 	onCancelScan: () => void;
 }
 
@@ -27,11 +33,11 @@ export const Scanner: React.FunctionComponent<ScannerProps> = ({
 	};
 	let onScanHandler = (data) => {
 		if (!data) return;
-		let { isValidUrl, metaData } = parseQRCodeString(data, PRIVATE_KEY);
+		let { isValidUrl, metaData, metaString } = parseQRCodeString(data, PRIVATE_KEY);
 		if (metaData?.businessId) {
 			stopScanner();
 			setScanState("success");
-			onScan({ businessId: metaData?.businessId });
+			onScan({ businessId: metaData?.businessId, metaString });
 		} else if (isValidUrl) {
             stopScanner();
             setScanState("success");

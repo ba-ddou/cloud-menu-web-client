@@ -65,10 +65,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@cloudmenu/cloud-menu-shared-libs@0.0.4":
-  version "0.0.4"
-  resolved "https://gitlab.com/api/v4/projects/28521280/packages/npm/@cloudmenu/cloud-menu-shared-libs/-/@cloudmenu/cloud-menu-shared-libs-0.0.4.tgz#6b36733e846fcd72436d41b11992049624162d62"
-  integrity sha1-azZzPoRvzXJDbUGxGZIEliQWLWI=
+"@cloudmenu/cloud-menu-shared-libs@0.0.5":
+  version "0.0.5"
+  resolved "https://gitlab.com/api/v4/projects/28521280/packages/npm/@cloudmenu/cloud-menu-shared-libs/-/@cloudmenu/cloud-menu-shared-libs-0.0.5.tgz#3543f07f8ad4882c4235abd58db6c38a33d405f9"
+  integrity sha1-NUPwf4rUiCxCNavVjbbDijPUBfk=
   dependencies:
     "@apollo/client" "^3.3.12"
     "@apollo/react-hooks" "^4.0.0"
@@ -159,9 +159,9 @@
     "@types/node" "*"
 
 "@types/node@*":
-  version "16.10.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.10.2.tgz#5764ca9aa94470adb4e1185fe2e9f19458992b2e"
-  integrity sha512-zCclL4/rx+W5SQTzFs9wyvvyCwoK9QtBpratqz2IYJ3O8Umrn0m3nsTv0wQBk9sRGpvUe9CwPDrQFB10f1FIjQ==
+  version "16.11.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.0.tgz#4b95f2327bacd1ef8f08d8ceda193039c5d7f52e"
+  integrity sha512-8MLkBIYQMuhRBQzGN9875bYsOhPnf/0rgXGo66S2FemHkhbn9qtsz9ywV1iCG+vbjigE4WUNVvw37Dx+L0qsPg==
 
 "@types/node@>=6":
   version "14.14.35"
@@ -421,9 +421,9 @@ babel-plugin-syntax-jsx@6.18.0:
   integrity sha1-CvMqmm4Tyno/1QaeYtew9Y0NiUY=
 
 balanced-match@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
-  integrity sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
+  integrity sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==
 
 base62@^1.1.0:
   version "1.2.8"
