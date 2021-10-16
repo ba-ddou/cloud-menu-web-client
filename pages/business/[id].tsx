@@ -4,12 +4,28 @@ import { gql } from "apollo-boost";
 import { BusinessCard } from "@components/molecules";
 import { Menu } from "@components/organisms";
 import { absoluteURLApolloClient } from "@root/apollo/client";
+import React, { useEffect } from "react";
+
 export interface BusinessPageProps {
 	business: Business;
 }
 
 const BusinessPage: React.SFC<BusinessPageProps> = ({ business }) => {
 	let { name, description, banner } = business;
+	const router = useRouter();
+	const { query } = router;
+	useEffect(() => {
+		// remove the metaa queery param from the url
+		if (query.meta) {
+			router.replace({
+				pathname: router.pathname,
+				query: {
+					...query,
+					meta: undefined,
+				},
+			});
+		}
+	}, []);
 	return (
 		<div>
 			<BusinessCard
