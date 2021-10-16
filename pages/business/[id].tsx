@@ -35,8 +35,8 @@ export async function getServerSideProps(context) {
 		metaData
 	);
 	const source =
-        metaData?.businessId && metaData?.incrementScanCount ? "QR" : "";
-    const id = context.params.id;
+		metaData?.businessId && metaData?.incrementScanCount ? "QR" : "";
+	const id = context.params.id;
 	const { data } = await absoluteURLApolloClient.query({
 		query: gql`
 			query ($id: String!, $source: String!) {
@@ -68,6 +68,7 @@ export async function getServerSideProps(context) {
 			}
 		`,
 		variables: { id, source },
+		fetchPolicy: metaData?.businessId ? "network-only" : "cache-first",
 	});
 
 	return {

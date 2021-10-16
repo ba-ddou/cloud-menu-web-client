@@ -8,5 +8,11 @@ export const apolloClient = new ApolloClient({
 
 export const absoluteURLApolloClient = new ApolloClient({
     uri: API_URL,
-    cache: new InMemoryCache()
+    cache: new InMemoryCache({
+        typePolicies: {
+            Business: {
+                
+            }
+        }
+    })
 });
